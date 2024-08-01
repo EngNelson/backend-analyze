@@ -16,24 +16,18 @@ View Results:
 => The results, including HTML version, page title, number of headings, number of internal and external links, and the presence of a login form, will be displayed in a tabular format below the form.
 
 => Assumptions and Design Decisions
-HTML Parsing: The solution uses cheerio to parse HTML documents and extract required information efficiently.
+HTML Parsing: I used cheerio in this solution to parse HTML documents and extract required information efficiently.
 
-=>CORS: CORS is enabled on the backend to allow communication with the frontend during development.
+=> CORS: CORS is enabled on the backend to restrict requests from all other origins except our frontend application.
 
-=>URL Validation: The backend assumes the provided URL is reachable and returns a valid HTML document.
+=> URL Validation: The backend assumes the provided URL is reachable and returns a valid HTML document.
 
-=>Login Form Detection: The logic for detecting login forms is based on common identifiers like "login" and "password" in form content.
+=> Login Form Detection: The logic for detecting login forms is based on common identifiers like "login" and "password" in form content.
 
-=>Performance Considerations: For large-scale deployments, consider implementing caching mechanisms and optimizing HTML parsing.
-
-=>Known Constraints and Limitations
-Error Handling: The current implementation provides basic error handling for unreachable URLs or invalid HTML documents.
-
-
-
+=> Known Constraints and Limitations
+Error Handling: My implementation provides basic error handling for unreachable URLs or invalid HTML documents.
 
 # How to Run The Unites Test.
-
 => Run the Tests with this commands:
 # npm run test
 
